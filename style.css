@@ -1,0 +1,117 @@
+html {
+display: block;
+}
+body {
+  background:rgb(244, 231, 231);
+  color:rgb(32, 7, 7);
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: lighter;
+  line-height: 32px;
+  /* display: block;
+  margin: 8px; */
+}
+
+h1, h2, h3 {
+font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  color: rgb(59, 16, 16);
+  font-size: 25px;
+  font-weight: bolder;
+  font-weight: 900;
+}
+
+h2 {
+  color: rgb(45, 19, 19);
+  font-size: 17px;
+  font-weight:400;
+  font-weight: bold;
+}
+
+a {
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color:rgb(175, 65, 65)
+}
+
+a:hover {
+  color:rgb(59, 16, 16)
+}
+
+/* Custom design with class (99% of your design) */
+.container {
+  width: 700px;
+  margin: 400px auto;
+}
+
+  /* For a screen < 960px, this CSS will be read */
+@media (max-width: 960px) {
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 720px) {
+  .container {  /*why are we using .container here and then redefining the width? why don't we skip .container? */
+    width: 500px;
+    }
+}
+
+@media (max-width: 540px) {
+  .container {
+    width: 300px;
+  }
+}
+
+.card-white {
+  background-color: rgb(249, 245, 245);
+  padding: 40px;
+  box-shadow: 0px 10px 30px;
+  border-radius: 4px;
+  margin: 20px, 0px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.img-circle {
+  border-radius: 35%;
+}
+
+.btn-red {
+  background-color: rgb(204, 70, 70);
+  color: white;
+  padding: 15px 20px;
+  border-radius: 4px;
+}
+
+.btn-red:hover {
+  background-color: rgb(80, 18, 18);
+  color: white;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.list-inline li {
+  display: inline;
+  padding: 10px;
+}
+
+.list-inline i {
+  font-size: 50px;
+  color: rgb(91, 51, 51)
+}
+
+.list-inline i:hover {
+  color: black;
+}
+
+#introduction p {
+  margin-bottom: 40px;
+}
